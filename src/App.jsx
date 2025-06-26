@@ -35,7 +35,7 @@ function Layout() {
 
     return (
         <>
-            <h1>이벤트 관리 시스템</h1>
+            <h1>이벤트 관리 시스템 CICD</h1>
             <hr />
             <header>
                 {

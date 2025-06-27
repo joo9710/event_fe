@@ -5,6 +5,7 @@ import Detail from "./event/Detail";
 import Login from "./user/Login";
 import { useEffect, useState } from "react";
 import Signup from "./user/Signup";
+import NaverCallback from "./user/NaverCallback";
 
 function Layout() {
     const [isLogin, setIsLogin] = useState(false);

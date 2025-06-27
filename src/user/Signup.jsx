@@ -26,7 +26,7 @@ const Signup = () => {
             if (err.response && err.response.status === 409) {
                 setError("이미 등록된 이메일입니다.");
             } else {
-                setError("회원가입에 실패했습니다.");
+                setError("회원가입에 실패했습니다");
             }
         }
     };

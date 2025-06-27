@@ -70,6 +70,7 @@ function App() {
                         <Route path="/regist" element={<Regist />} />
                         <Route path="/list" element={<List />} />
                         <Route path="/detail/:event_id" element={<Detail />} />
+                        <Route path="/naver/callback" element={<NaverCallback />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

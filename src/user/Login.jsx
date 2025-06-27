@@ -41,6 +41,10 @@ export default function Login() {
                 inputRef.current.focus();
             });
     };
+
+        // 네이버 아이디로 로그인하기 위한 URL
+    const NAVER_AUTH_URL = "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=TWPtaTxalBGseiuREViw&redirect_uri=http://13.124.75.129:8000/users/auth/naver/callback&state=randomstate";
+
         
     return (
         <>
@@ -50,6 +54,14 @@ export default function Login() {
                 <input type="password" value={password} onChange={changePassword} placeholder="패스워드를 입력하세요." />
                 <button type="submit">로그인</button>
             </form>
+
+            <button
+                type="button"
+                onClick={() => window.location.href = NAVER_AUTH_URL}
+                style={{ backgroundColor: "#03C75A", color: "white", padding: "10px", marginTop: "10px" }}
+            >
+                네이버 아이디로 로그인
+            </button>
         </>
     );
 }
